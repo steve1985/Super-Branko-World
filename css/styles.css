@@ -1,0 +1,130 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../images/body-background.png);
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
+
+.world {
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/ground.jpg);
+}
+
+.score {
+    position: absolute;
+    font-size: 4vmin;
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+    right: 1vmin;
+    top: 1vmin;
+}
+
+.start-screen {
+    position: absolute;
+    font-size: 5vmin;
+    font-family: "Gill Sans", sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+.ground {
+    --left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+}
+
+.character {
+    --bottom: 6;
+    position: absolute;
+    left: 3%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+    left: calc(var(--left) * 1%);
+}
+
+.obstacle {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 20%;
+    bottom: 0;
+}
+
+.lose-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+.lose-content {
+    color: white;
+}
+  
+.score-display {
+    margin-bottom: 10px;
+}
+  
+.highest-score {
+    margin-bottom: 10px;
+}
+  
+.replay-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.replay-button:hover {
+    background-color: #45a049;
+}
+  
+.start-screen {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.start-screen h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #da1900;
+}
+
+.start-screen h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: aqua;
+}
+
+.start-screen article {
+    font-size: 16px;
+    line-height: 1.5;
+}

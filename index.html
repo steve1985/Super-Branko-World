@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Branko World</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" type="module"></script>
+</head>
+<body>
+  <main>
+    <section class="world" data-world>
+        <output class="score" data-score>0</output>
+        <section class="start-screen" data-start-screen>
+          <h2>Press any key to start</h2>
+          <h3>How to play:</h3>
+          <article>
+            Use "Space" or "ArrowUp" to jump. <br>
+            Use "ArrowLeft" to move left and "ArrowRight" to move right.
+          </article>
+        </section>
+        <section data-lose-screen class="lose-screen hide">
+            <section class="lose-content">
+              <h2 class="lose-message">Game Over!</h2>
+              <output class="score-display" data-score-display></output>
+              <section class="highest-score">Highest Score: <output data-highest-score>0</output></section>
+              <button class="replay-button" data-replay-button>Replay</button>
+            </section>
+        </section>
+        <img src="images/ground-2.png" alt="Ground" class="ground" data-ground>
+        <img src="images/ground-2.png" alt="Ground" class="ground" data-ground>
+        <img src="images/character-run-1.png" alt="Character" class="character" data-character>
+    </section>
+  </main>
+  <audio id="bgMusic" src="/Sounds/Super Mario Bros Theme Song.mp3" loop class="hide"></audio>
+</body>
+</html>
