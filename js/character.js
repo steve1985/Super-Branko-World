@@ -51,7 +51,7 @@ function handleRun(delta, speedScale) {
 
   if (currentFrameTime >= FRAME_TIME) {
     chrFrame = (chrFrame + 1) % CHR_FRAME_COUNT
-    characterElem.src = '../images/character-run-${chrFrame}.png';
+    characterElem.src = `../images/character-run-${chrFrame}.png`;
     currentFrameTime -= FRAME_TIME
   }
   currentFrameTime += delta * speedScale
