@@ -15,7 +15,7 @@ const scoreDisplay = document.querySelector('[data-score-display]');
 const highestScoreDisplay = document.querySelector('[data-highest-score]');
 const deathSound = new Audio('./Sounds/Mario Death  Sound Effect HD.mp3');
 const milestoneSound = new Audio('./Sounds/Mario Bros Life up Sound Effect.mp3');
-const jumpSound = new Audio('../Sounds/Mario Jump Sound Effect.mp3');
+const jumpSound = new Audio('./Sounds/Mario Jump Sound Effect.mp3');
 const gameOverSound = new Audio('./Sounds/Mario Death  Sound Effect HD.mp3');
 
 setPixelToWorldScale();
